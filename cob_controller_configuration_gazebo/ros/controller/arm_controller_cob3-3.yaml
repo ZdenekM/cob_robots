@@ -10,25 +10,39 @@ arm_controller:
     - arm_7_joint
   gains:
     arm_1_joint:
-      p: 2000.0
+      p: 12000.0
+      i: 9000.0
+      i_clamp: 64.0
       d: 30.0
     arm_2_joint:
-      p: 2000.0
+      p: 12000.0
+      i: 9000.0
+      i_clamp: 64.0
       d: 30.0
     arm_3_joint: 
-      p: 2000.0
+      p: 2900.0
+      i: 2400.0
+      i_clamp: 4.0
       d: 0.0
     arm_4_joint:
-      p: 2020.0
+      p: 2920.0
+      i: 2400.0
+      i_clamp: 4.0
       d: 0.0
     arm_5_joint:
-      p: 2030.0
+      p: 2930.0
+      i: 2400.0
+      i_clamp: 4.0
       d: 0.0
     arm_6_joint:
-      p: 2050.0
+      p: 2950.0
+      i: 2400.0
+      i_clamp: 4.0
       d: 0.0
     arm_7_joint:
-      p: 2080.0
+      p: 2980.0
+      i: 2400.0
+      i_clamp: 4.0
       d: 0.0
 
   arm_joint_trajectory_action_node:
@@ -43,16 +57,16 @@ arm_controller:
     constraints:
       goal_time: 0.6
       arm_1_joint:
-        goal: 0.1
+        goal: 0.05
       arm_2_joint:
-        goal: 0.1
+        goal: 0.05
       arm_3_joint:
-        goal: 0.1
+        goal: 0.05
       arm_4_joint:
-        goal: 0.1
+        goal: 0.05
       arm_5_joint:
-        goal: 0.1
+        goal: 0.05
       arm_6_joint:
-        goal: 0.1
+        goal: 0.05
       arm_7_joint:
-        goal: 0.1
+        goal: 0.05
